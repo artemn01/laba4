@@ -1,10 +1,8 @@
-def partlist():
-    a = ["az", "toto", "picaro", "zone", "kiwi"]
+def partlist(arr):
     result = []
-    for i in range(1, len(a)):
-        result.append([' '.join(a[:i]), ' '.join(a[i:])])
-
+    for i in range(1, len(arr)):
+        result.append((' '.join(arr[:i]), ' '.join(arr[i:])))
+    
     return result
 
-print(partlist())
-    
+print(partlist(["az", "toto", "picaro", "zone", "kiwi"]))

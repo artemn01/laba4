@@ -1,9 +1,8 @@
-import math
-lst = [1, 5, 2]
+def product_array(numbers):
+    import math
+    result = []
+    for i in numbers:
+        result.append(int(math.prod(numbers)/i))
+    return result
 
-result = []
-
-for i in lst:
-    result.append(int(math.prod(lst)/i))
-
-print(result)
+print(product_array([1, 5, 2]))
